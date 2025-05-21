@@ -1,0 +1,19 @@
+%main.content-wrapper
+  %h1= t('help.title')
+  %p= t('help.welcome')
+  
+  %h2= t('help.main_features')
+  %p= t('help.features_intro')
+  %ul
+    %li= t('help.features.view_images')
+    %li= t('help.features.rate_images')
+
+  %h2= t('help.faq')
+
+  %h3= t('help.faq_questions.site_not_working')
+  %p= t('help.faq_questions.site_not_working_solution')
+  
+  %h2= t('help.additional_help')
+  %p= t('help.additional_help_contact', email: 'support@example.com')
+
+  %div.content-filler

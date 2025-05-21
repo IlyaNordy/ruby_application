@@ -1,0 +1,120 @@
+en:
+  header:
+    logo_title: "Experteese in Ruby_on_Rails"
+    home: "Home"
+    help: "Help"
+    contacts: "Contacts"
+    about: "About"
+    results: "Results"
+    sign_in: "Sign in"
+    sign_up: "Sign up"
+    sign_out: "Sign out"
+    person: "Me"
+    profile: "My page"
+    settings: "Settings"
+  sessions:
+    new:
+      password: "Password"
+      sign_in: "Sign in"
+      new_user?: "New user?"
+      sign_up: "Sign up"
+  users:
+    form:
+      name: "Name"
+      password: "Password"
+      password_confirmation: "Password confirmation"
+      create_account: "Create account"
+  work:
+    index:
+      title: "Work Area"
+      welcome: "Welcome to the Work Area! Here you can review and evaluate images."
+      select_theme: "Select Theme"
+      theme_name: "Theme Name"
+      image_name: "Image Name"
+      previous_image: "Previous Image"
+      next_image: "Next Image"
+      expert_value: "Expert Value"
+      total_values: "Total Values"
+      default_select_theme: "Select theme to leave your answer"
+    button_theme_select:
+      select_theme: "Select Theme"
+    choose_theme_from_arr:
+      prompt: "Select Theme"
+  results:
+    list:
+      title: "Results"
+      welcome: "Welcome to the Results page! Here you can see data about images and their ratings."
+      name: "Name"
+      image: "Image"
+      theme: "Theme"
+      user_value: "User Value"
+      avg_score: "AVG Score"
+  footer:
+    made_with_love: "Made with love on "
+    ruby_on_rails: "Ruby on Rails"
+  contacts:
+    title: "Contacts"
+    welcome: "Welcome to the Contacts page! Here you can find information about the site creator."
+    creator_info: "Site by Ilya Voitenko 5140903/40401"
+    open_to_proposals: "I am open to proposals and ready to help!"
+  help:
+    title: "Help"
+    welcome: "Welcome to the Help page! Here you will find useful information on how to use the site."
+    main_features: "Main Features"
+    features_intro: "On our site, you can:"
+    features:
+      view_images: "View images."
+      rate_images: "Rate images."
+    faq: "Frequently Asked Questions"
+    faq_questions:
+      site_not_working: "What to do if the site is not working?"
+      site_not_working_solution: "Try refreshing the page. If the issue persists, contact us through the Contacts page."
+    additional_help: "Need Additional Help?"
+    additional_help_contact: "If you have any questions, email us at: %{email}. We will respond within 24 hours."
+  about:
+    title: "About"
+    welcome: "Welcome to the 'About' page! Here you will learn more about the project and its creator."
+    who_am_i: "Who am I?"
+    who_am_i_text: "My name is Ilya Voitenko, a student from group 5140903/40401. This site is my personal project, created for learning and demonstrating web development skills."
+    project_purpose: "Project Purpose"
+    project_purpose_text: "This site is designed for experimenting with images, their processing, and display. I aim to enhance its functionality and add new features in the future."
+    contacts: "Contacts"
+    contacts_text: "If you are interested in collaboration or have questions, contact me through the Contacts page or via email: %{email}."
+  results:
+    list:
+      name: "Name"
+      image: "Image"
+      theme: "Theme"
+      user_value: "User Value"
+      avg_score: "AVG Score"
+  work:
+    index:
+      title: "Review these images from 5 to 100"
+      welcome: "Which image best conveys a futuristic style?"
+      select_theme: "Select Theme"
+      user_value: "User value"
+      common_value: "Common value"
+      total_values: "Total values"
+      previous_image: "Previous image"
+      next_image: "Next image"
+      default_image_title: "Default image"
+      default_image_alt: "Default image"
+      expert_value_title: "Expert value"
+      previous_image_title: "Go to previous image"
+      next_image_title: "Go to next image"
+      theme_name_title: "Theme name"
+      image_name_title: "Image file name"
+      user_value_title: "User value"
+      common_value_title: "Common value"
+      total_values_title: "Total values"
+      value_scale_title: "Value scale"
+      set_value: "Set value: %{value}"
+      save_value: "Save value"
+      save_value_title: "Save image diag results"
+      default_select_theme: "Select theme to leave your answer"
+      select_theme_title: "Select theme from your device folder"
+    button_theme_select:
+      select_theme: "Choose Theme"
+    choose_theme_from_arr:
+      prompt: "Select Theme"
+  

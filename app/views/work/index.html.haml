@@ -1,0 +1,63 @@
+%main.content-wrapper
+  .row.bloc
+    .col-md-12
+      .preamble
+        %h2= t('work.index.title')  # "Review this images from 5 to 100"
+    .col-md-8
+      .image_display
+        .row.image
+          .col-md-12
+            .img-center{:title => t('work.index.default_image_title')}
+              %img{:alt => t('work.index.default_image_alt'), :src => asset_path(@default_image_name), :title => t('work.index.default_image_title'), :style => "width:100%; height:100%; display: block; margin: 0 auto;" }
+            .image_user_value{:title => t('work.index.expert_value_title')}
+
+          .col-md-6
+            .img-left-side
+              %h3{:title => t('work.index.previous_image_title')}
+                %button.btn.btn-default{type: "submit", name: "submission"}= t('work.index.previous_image')  # "Previous image"
+
+          .col-md-6
+            .img-right-side
+              %h3{:title => t('work.index.next_image_title')}
+                %button.btn.btn-default{type: "submit", name: "submission"}= t('work.index.next_image')  # "Next image"
+
+    .col-md-4
+      .col-md-12
+        %h2.up-theme{:title => t('work.index.theme_name_title')} #{@selected_theme}
+
+      .left_controls
+        .select_theme
+          = render 'work/button_theme_select'
+
+      .col-md-12
+        %h2.up{:title => t('work.index.image_name_title')} #{@selected_image_name}
+
+      .col-md-12
+        %span.user_value{:style => "display: none"}
+          = t('work.index.user_value')  # "User value"
+          %h2.value{:title => t('work.index.user_value_title')}
+        %span.common_value{:style => "display: none"}
+          = t('work.index.common_value')  # "Common value"
+          %h2.common{:title => t('work.index.common_value_title')}
+        %span.total_values
+          = t('work.index.total_values')  # "Total values"
+          %h2.total{:title => t('work.index.total_values_title')} #{@values_qty.round}
+
+      .image_diag
+        .value_block
+          %h2.down#chosen_value{:title => t('work.index.value_scale_title')} #{t('work.index.set_value', value: 50)}
+
+        .row.percentage
+          .col-md-6
+            %p.left 5%
+          .col-md-6
+            %p.right 100%
+
+        #slider
+          %input.slide#slide{:max => "100", :min => "5", :value => "50", :onchange => "updateValue(this.value)", :step => "5", :type => "range"}
+        %br
+
+        %button.btn.button_save{:title => t('work.index.save_value_title')}
+          %a{"data-remote" => "true", :format => "js", :href => "#", :title => t('work.index.save_value_title')}= t('work.index.save_value')  # "Save value"
+
+  %div.content-filler
