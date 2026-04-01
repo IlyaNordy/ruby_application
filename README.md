@@ -1,24 +1,32 @@
-# README
+# ruby_application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Учебное веб-приложение на Ruby on Rails.
 
-Things you may want to cover:
+## О проекте
+Проект создан для практики работы с Ruby on Rails, структурой MVC-приложения, подключением базы данных и базовой серверной логикой.
 
-* Ruby version
+## Стек
+- Ruby
+- Ruby on Rails
+- HTML
+- JavaScript
+- Haml
+- Sass
+- Docker
 
-* System dependencies
+## Что реализовано
+- базовая структура Rails-приложения
+- работа с представлениями и серверной логикой
+- настройка конфигурации приложения
+- подключение базы данных
+- подготовка проекта к локальному запуску
 
-* Configuration
+## Цель проекта
+Получение практики в создании веб-приложений на Rails и изучение структуры full stack-проекта.
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Запуск проекта
+```bash
+bundle install
+rails db:create
+rails db:migrate
+rails s
